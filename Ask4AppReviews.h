@@ -160,7 +160,17 @@ extern NSString *const kAsk4AppReviewsReminderRequestDate;
  'YES' will show the Ask4AppReviews alert everytime. Useful for testing how your message
  looks and making sure the link to your app's review page works.
  */
-#define Ask4AppReviews_DEBUG				YES
+#ifdef DEBUG
+    #define Ask4AppReviews_DEBUG                    YES
+#else
+    #ifdef ADHOC
+        #define Ask4AppReviews_DEBUG				NO
+    #else
+        #define Ask4AppReviews_DEBUG				NO
+    #endif
+#endif
+
+
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
