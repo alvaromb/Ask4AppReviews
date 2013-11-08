@@ -161,7 +161,7 @@ extern NSString *const kAsk4AppReviewsReminderRequestDate;
  looks and making sure the link to your app's review page works.
  */
 #ifdef DEBUG
-    #define Ask4AppReviews_DEBUG                    YES
+    #define Ask4AppReviews_DEBUG                    NO
 #else
     #ifdef ADHOC
         #define Ask4AppReviews_DEBUG				NO
