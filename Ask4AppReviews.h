@@ -134,7 +134,7 @@ extern NSString *const kAsk4AppReviewsReminderRequestDate;
  Users need to 'use' the same version of the app this many times before
  before they will be prompted to rate it.
  */
-#define Ask4AppReviews_USES_UNTIL_PROMPT		10		// integer
+#define Ask4AppReviews_USES_UNTIL_PROMPT		6		// integer
 
 /*
  A significant event can be anything you want to be in your app. In a
