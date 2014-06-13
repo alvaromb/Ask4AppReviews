@@ -420,7 +420,7 @@ NSString *templateReviewURLiOS7 = @"itms-apps://itunes.apple.com/app/idAPP_ID";
 }
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
-    [theViewController dismissModalViewControllerAnimated:YES];
+    [theViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -461,7 +461,7 @@ NSString *templateReviewURLiOS7 = @"itms-apps://itunes.apple.com/app/idAPP_ID";
                 [mPicker setToRecipients:toRecipients];
                 [mPicker setMessageBody:Ask4AppReviews_EMAIL_BODY isHTML:NO];
                 
-                [theViewController presentModalViewController:mPicker animated:YES];
+                [theViewController presentViewController:mPicker animated:YES completion:nil];
 
                 }else {
                     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure" 
