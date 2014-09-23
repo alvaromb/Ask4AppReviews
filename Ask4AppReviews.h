@@ -49,12 +49,12 @@ extern NSString *const kAsk4AppReviewsReminderRequestDate;
 /*
  Your localized app's name.
  */
-#define Ask4AppReviews_LOCALIZED_APP_NAME    [[[NSBundle mainBundle] localizedInfoDictionary] objectForKey:(NSString *)kCFBundleNameKey]
+#define Ask4AppReviews_LOCALIZED_APP_NAME @"Hoods"
 
 /*
  Your app's name.
  */
-#define Ask4AppReviews_APP_NAME				Ask4AppReviews_LOCALIZED_APP_NAME ? Ask4AppReviews_LOCALIZED_APP_NAME : [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleNameKey]
+#define Ask4AppReviews_APP_NAME	@"Hoods"
 
 /*
  This is the message your users will see once they've passed the day+launches
